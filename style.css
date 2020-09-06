@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Mono&family=Roboto&display=swap");
+/**
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  width: 960px;
+  margin: 20px auto;
+}
+
+.header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  /* border: 1px solid green; */
+  padding: 20px;
+}
+
+.img {
+  height: 50%;
+  width: 50%;
+}
+
+.img > img {
+  height: 80%;
+  width: 80%;
+}
+
+.text {
+  /* border: 1px dashed rosybrown; */
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text > h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  width: 80%;
+  line-height: 1.5;
+}
+
+.text > p {
+  width: 60%;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.btn {
+  padding: 18px 32px;
+  border: none;
+  background: chocolate;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    width: 90vw;
+    height: 90vh;
+    margin: 20px;
+    /* border: 1px dashed red; */
+  }
+  main {
+    flex-direction: column;
+    height: 90vh;
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+  .img {
+    height: 80%;
+    width: 90%;
+    /* border: royalblue 1px dashed; */
+  }
+
+  .img > img {
+    height: 100%;
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+    margin: 20px;
+    height: 90vh;
+    width: 90vw;
+  }
+}
